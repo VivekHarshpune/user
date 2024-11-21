@@ -1,0 +1,103 @@
+/* src/components/CustomWorkoutPlans.css */
+
+.custom-workout-plans {
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .custom-workout-plans h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .custom-workout-plans h2 {
+    font-size: 2.2rem;
+    margin: 20px 0;
+    color: #d54c4c;
+  }
+  
+  .custom-workout-plans ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  
+  .custom-workout-plans ul li {
+    margin: 10px 0;
+  }
+  
+  .custom-workout-plans .inquiry-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .custom-workout-plans .inquiry-form label {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .custom-workout-plans .inquiry-form input,
+  .custom-workout-plans .inquiry-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .custom-workout-plans .inquiry-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .custom-workout-plans .start-button {
+    padding: 15px 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  .custom-workout-plans .start-button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+  }
+  
+  .custom-workout-plans .start-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 600px) {
+    .custom-workout-plans {
+      padding: 20px;
+    }
+  
+    .custom-workout-plans h1 {
+      font-size: 2.2rem;
+    }
+  
+    .custom-workout-plans h2 {
+      font-size: 1.8rem;
+    }
+  
+    .custom-workout-plans .start-button {
+      padding: 10px 30px;
+      font-size: 16px;
+    }
+  }
+  

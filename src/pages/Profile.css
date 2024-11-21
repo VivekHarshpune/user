@@ -1,0 +1,157 @@
+/* General Styles */
+.profile-container {
+  padding: 20px;
+  background-color: #f2f4f7;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background: #5fda75b1;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.update-btn, .logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.update-btn {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.update-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Greeting Section Styles */
+.greeting-container {
+  text-align: center;
+  padding: 60px;
+  background: #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-title {
+  font-size: 2.5em;
+  color: #0277bd;
+  margin-bottom: 20px;
+}
+
+.greeting-text {
+  font-size: 1.2em;
+  color: #0277bd;
+  margin-bottom: 30px;
+}
+
+.register-button, .login-button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.register-button {
+  background-color: #0288d1;
+  color: #fff;
+}
+
+.register-button:hover {
+  background-color: #0277bd;
+  transform: scale(1.05);
+}
+
+.login-button {
+  background-color: #009688;
+  color: #fff;
+}
+
+.login-button:hover {
+  background-color: #00796b;
+  transform: scale(1.05);
+}
+
+/* Features Section Styles */
+.features-container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.features-title {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  background-color: #f0f4c3;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.feature-item:hover {
+  background-color: #e1f5fe;
+  transform: translateY(-5px);
+}

@@ -1,0 +1,51 @@
+.crowd-level-container {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6b6b;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.people-count {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.crowd-level {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.crowd-level.low-crowd {
+    color: green;
+}
+
+.crowd-level.medium-crowd {
+    color: orange;
+}
+
+.crowd-level.high-crowd {
+    color: red;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #ff4b4b;
+}

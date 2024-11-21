@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #151212;
+  background-color: #135ed0; /* Light background color for better contrast */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #050d98, #34c759);
+  color: rgb(235, 225, 225);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 48px; /* Existing size */
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(152, 15, 15, 0.3); /* Add text shadow for depth */
+  animation: fadeIn 1s ease-in; /* Fade-in animation */
+  color: #ffffff; /* Ensure the text color is white for contrast */
+}
+
+.hero-subtitle {
+  font-size: 24px; /* Existing size */
+  margin: 10px 0;
+  font-weight: 300; /* Lighter weight for contrast */
+  color: rgba(11, 199, 36, 0.8); /* Slightly transparent white for a softer look */
+}
+
+/* Button Styles */
+.learn-more-btn,
+.predict-btn,
+.advertise-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Include box-shadow transition */
+}
+
+.learn-more-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.predict-btn {
+  background-color: #ff758c;
+  color: white;
+}
+
+.advertise-btn {
+  background-color: #ffbf00;
+  color: black;
+}
+
+.learn-more-btn:hover,
+.predict-btn:hover,
+.advertise-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Facilities Section */
+.facilities-section {
+  padding: 0rem;
+  background-color: #c7510797;
+}
+
+.facilities-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #333; /* Darker title color */
+}
+
+.facilities-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.facility-item {
+  width: 300px;
+  margin: 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Include background color transition */
+}
+
+.facility-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #e9ecef; /* Change background on hover */
+}
+
+.facility-name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.facility-description {
+  font-size: 16px;
+  color: #0f0501;
+}
+
+/* Add image styling for facilities */
+.facility-image {
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height to maintain consistency */
+  object-fit: cover; /* Ensure images cover the container */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Advertisement Section */
+/* Advertisement Section */
+.advertisement-section {
+  padding: 60px 20px;
+  background-color: #c38db2; /* Light grey background */
+  text-align: center;
+}
+
+.advertisement-title {
+  font-size: 36px; /* Existing size */
+  margin-bottom: 20px;
+}
+
+.advertise-image {
+  width: 50%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 40px; /* Rounded corners for images */
+  display: block; /* Ensure block display for centering */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Ensure the carousel image container is also centered */
+.carousel-image {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  transition: transform 1s ease-in-out; /* Transition effect for carousel images */
+}
+
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-info {
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.footer-text {
+  margin: 5px 0;
+}
+
+.social-media {
+  margin-top: 10px;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center aligns the items horizontally */
+}
+
+.social-link {
+  color: #00aced;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s; /* Added transform for hover effect */
+  display: flex; /* Aligns text and logo in a row */
+  align-items: center; /* Vertically centers the items */
+}
+
+.social-link img {
+  width: 30px; /* Adjust logo size */
+  height: 30px; /* Maintain aspect ratio */
+  margin-right: 8px; /* Space between logo and text */
+}
+
+.social-link:hover {
+  color: #007bb5;
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger */
+  }
+}
+
+.hero-title {
+  animation: scale 2s ease-in-out infinite; /* Apply scale animation */
+}
+
+/* Carousel Transition Timing */
+.slick-slide {
+  transition: opacity 0.5s ease; /* Smooth transition for slides */
+}
+/* Add this to your existing CSS file */
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0); /* Original position */
+  }
+  50% {
+    transform: translateY(-15px); /* Jump upwards */
+  }
+}
+
+.jump-letter {
+  display: inline-block; /* Allows transform to work */
+  animation: jump 1s ease forwards; /* Apply the jump animation */
+}
+
+/* You can adjust the animation duration or effect as needed */
+/* Add this to your existing CSS file */
+
+@keyframes jiggle {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
+.facility-name {
+  font-size: 24px;
+  margin: 10px 0;
+  animation: jiggle 1s ease-in-out infinite; /* Apply jiggle animation */
+}
+.updates-box {
+  background-color: #d3cdc9; /* White background for the box */
+  border: 1px solid #861616; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 2px 5px rgba(106, 7, 7, 0.1); /* Subtle shadow for depth */
+  margin: 20px 0; /* Margin to separate from other sections */
+}
+
+.news-ticker {
+  margin-bottom: 15px; /* Space between news ticker and actions */
+  font-weight: bold; /* Make ticker text bold */
+  color: #333; /* Dark text for better readability */
+}
+
+.actions-container {
+  display: flex; /* Flex layout for buttons */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center vertically */
+}
+
+.check-traffic, .feedback-section {
+  flex: 1; /* Equal space for both sections */
+  text-align: center; /* Center align text */
+}
+
+.check-traffic-title {
+  margin: 0 0 10px; /* Margin for spacing */
+}
+
+.predict-btn, .feedback-btn {
+  background-color: #4CAF50; /* Green button */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for buttons */
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.predict-btn:hover, .feedback-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

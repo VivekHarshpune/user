@@ -1,0 +1,135 @@
+.about-us {
+    background-color: #f8f9fa; /* Light background color for the page */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the content */
+    transition: transform 0.3s ease; /* Add a slight transform effect */
+  }
+  
+  .about-us:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .about-us h1 {
+    font-size: 2.5rem; /* Increase the font size for the main title */
+    color: #343a40; /* Dark color for the title */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Spacing between letters */
+  }
+  
+  .about-us h2 {
+    font-size: 1.8rem; /* Subtitle size */
+    color: #495057; /* Slightly lighter color for subtitles */
+    margin-top: 20px; /* Space above subtitle */
+    border-bottom: 2px solid #007bff; /* Underline effect */
+    padding-bottom: 5px; /* Padding below the border */
+  }
+  
+  .about-us p {
+    font-size: 1rem; /* Standard paragraph size */
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 15px; /* Space below each paragraph */
+    color: #6c757d; /* Light grey for text */
+  }
+  
+  .about-us img {
+    display: block; /* Center the image */
+    margin: 20px auto; /* Space around the image */
+    border-radius: 10px; /* Rounded corners for images */
+    width: 100%; /* Responsive width */
+    max-width: 600px; /* Max width to maintain layout */
+    transition: transform 0.3s ease; /* Image transition effect */
+  }
+  
+  .about-us img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .about-us .team {
+    display: flex; /* Flexbox for team member cards */
+    flex-wrap: wrap; /* Wrap team members to the next line */
+    justify-content: space-around; /* Space around team members */
+    margin-top: 30px; /* Space above team section */
+  }
+  
+  .about-us .team-member {
+    background-color: white; /* White background for cards */
+    border-radius: 10px; /* Rounded corners for cards */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center; /* Centered text in cards */
+    margin: 10px; /* Space between cards */
+    flex-basis: calc(30% - 20px); /* Responsive card width */
+    transition: transform 0.3s ease; /* Card transition effect */
+  }
+  
+  .about-us .team-member:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .about-us .team-member img {
+    border-radius: 50%; /* Circular profile images */
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    border: 3px solid #007bff; /* Blue border around profile images */
+    transition: border-color 0.3s ease; /* Border transition effect */
+  }
+  
+  .about-us .team-member img:hover {
+    border-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .about-us .team-member h3 {
+    margin: 10px 0 5px 0; /* Space around name */
+    font-size: 1.2rem; /* Name font size */
+    color: #343a40; /* Dark color for names */
+  }
+  
+  .about-us .team-member p {
+    font-size: 0.9rem; /* Title font size */
+    color: #868e96; /* Grey color for titles */
+  }
+  
+  .offerings-list {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding */
+  }
+  
+  .offerings-list li {
+    display: flex; /* Flexbox for icons and text */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
+  .offerings-list li .offering-icon {
+    font-size: 1.5rem; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+    color: #007bff; /* Icon color */
+  }
+  
+  .image-carousel {
+    margin-top: 30px; /* Space above the carousel */
+    border-radius: 10px; /* Rounded corners for the carousel */
+    overflow: hidden; /* Hide overflow for rounded corners */
+  }
+  
+  .carousel-image {
+    width: 100%; /* Responsive width for carousel images */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Add a media query for responsiveness */
+  @media (max-width: 768px) {
+    .about-us {
+      padding: 20px; /* Reduce padding on smaller screens */
+    }
+  
+    .about-us .team-member {
+      flex-basis: calc(45% - 20px); /* Adjust width for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,190 @@
+/* CSS for Badminton Booking Page */
+.badminton-booking-page {
+    max-width: 800px;  
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    color: #333;
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+.badminton-booking-page:hover {
+    background-color: #e6f2ff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.badminton-booking-page h1 {
+    text-align: center;
+    color: #ff6347;
+    font-size: 2.8em;
+    margin-bottom: 25px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.badminton-booking-page h2 {
+    margin-top: 25px;
+    color: #555;
+    font-size: 1.8em;
+}
+
+.badminton-booking-page p, 
+.badminton-booking-page .description {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+.badminton-booking-page select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badminton-booking-page select:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.book-now-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #005f75;
+    transform: translateY(-2px);
+}
+
+.available-courts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.description {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
+
+.court-details, 
+.upcoming-events, 
+.ad {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #e7f3fe;
+    transition: transform 0.3s ease;
+}
+
+.court-details:hover, 
+.upcoming-events:hover, 
+.ad:hover {
+    transform: translateY(-5px);
+}
+
+.upcoming-events {
+    border-color: #008cba;
+    background-color: #d1ecf1;
+}
+
+.ads-section {
+    position: relative;
+    margin-top: 35px;
+}
+
+.ad {
+    border-color: #28a745;
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Special Offer Box */
+.special-offer-box {
+    margin: 25px 0;
+    padding: 18px;
+    background-color: #ffeb3b;
+    border: 1px solid #fbc02d;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Pop-up advertisement styles */
+.ad-popup {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 320px;
+    padding: 18px;
+    background-color: #fff;
+    border: 2px solid #ff6347;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.close-popup-btn,
+.goto-badminton-world-btn {
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-popup-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.goto-badminton-world-btn {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.close-popup-btn:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+}
+
+.goto-badminton-world-btn:hover {
+    background-color: #31b0d5;
+    transform: translateY(-2px);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

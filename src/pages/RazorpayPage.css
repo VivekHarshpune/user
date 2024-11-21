@@ -1,0 +1,34 @@
+.razorpay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+h2 {
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555; /* Medium text color */
+    margin-bottom: 40px;
+}
+
+.pay-now-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white; /* White text color */
+    background-color: #F37254; /* Razorpay brand color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pay-now-button:hover {
+    background-color: #d95a3c; /* Darker shade on hover */
+}

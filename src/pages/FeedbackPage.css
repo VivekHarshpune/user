@@ -1,0 +1,244 @@
+.feedback-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #c72f04 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(164, 7, 7, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Keyframes for Background Animation */
+@keyframes bgGradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Apply Gradient Animation */
+.feedback-container {
+    background: linear-gradient(135deg, #2507bd, #761f07, #a00474);
+    background-size: 200% 200%;
+    animation: bgGradientAnimation 5s ease infinite;
+}
+
+/* Keyframes for Fade In Effect */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.feedback-header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: textSlideDown 1.2s ease;
+}
+
+/* Text Animation */
+@keyframes textSlideDown {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.feedback-header h1 {
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: letterSpacing 1.5s ease-in-out infinite;
+}
+
+/* Letter Movement Animation */
+@keyframes letterSpacing {
+    0%, 100% { letter-spacing: 2px; }
+    50% { letter-spacing: 6px; }
+}
+
+.feedback-header p {
+    color: #f3f3f3;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.feedback-form-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+/* Pulse Animation for Heading */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+.feedback-form-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #f3f3f3;
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center child elements horizontally */
+}
+
+.feedback-input,
+.feedback-textarea,
+.feedback-select {
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Optional: set a max width */
+    margin: 0 auto; /* Center input boxes */
+    padding: 15px;
+    border: none;
+    border-radius: 22px;
+    font-size: 1rem;
+    color: #34495e;
+    background: rgba(229, 244, 234, 0.8);
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: inputHover 0.5s ease-in-out forwards;
+}
+
+/* The rest of your existing CSS remains the same */
+
+/* Input Focus Animation */
+.feedback-input:focus,
+.feedback-textarea:focus,
+.feedback-select:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 8px rgba(255, 192, 203, 0.5);
+    transform: scale(1.05);
+}
+
+/* Hover Effect for Input Fields */
+.feedback-input:hover,
+.feedback-textarea:hover,
+.feedback-select:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.feedback-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.feedback-select {
+    cursor: pointer;
+}
+
+.feedback-submit-btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #84054d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: buttonHover 0.3s forwards;
+}
+
+/* Button Hover Effect */
+.feedback-submit-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-5px);
+}
+
+/* Button Hover Animation */
+@keyframes buttonHover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+.feedback-thankyou-section {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.feedback-thankyou-section h2 {
+    font-size: 2.2rem;
+    color: #27ae60;
+    font-weight: 700;
+    animation: zoomIn 1s ease;
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.feedback-thankyou-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.feedback-footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #02ba05;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Fade In Up Animation for Footer */
+@keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.feedback-footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .feedback-container {
+      padding: 20px;
+    }
+  
+    .feedback-header h1 {
+      font-size: 2rem;
+    }
+  
+    .feedback-form-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .feedback-submit-btn {
+      font-size: 1.1rem;
+    }
+  
+    .feedback-thankyou-section h2 {
+      font-size: 2rem;
+    }
+}
+.feedback-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    animation: logoSlideDown 1.5s ease;
+}
+
+/* Logo Animation */
+@keyframes logoSlideDown {
+    0% { transform: translateY(-30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

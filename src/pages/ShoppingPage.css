@@ -1,0 +1,143 @@
+/* ShoppingPage.css */
+.shopping-page {
+    padding: 10px; /* Reduced padding for the overall page */
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px; /* Reduced margin for header */
+}
+
+.welcome-image {
+    width: 100%; /* Full width for responsiveness */
+    height: 500px; /* Fixed height for consistency */
+    object-fit: cover; /* Maintain aspect ratio without cutting off */
+    border-radius: 30px;
+}
+
+.category-nav {
+    margin-bottom: 10px; /* Reduced margin for category navigation */
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-item {
+    margin: 15px 0; /* Increased margin for category items */
+}
+
+.category-item a {
+    text-decoration: none;
+    color: #4CAF50; /* Green color for links */
+    font-weight: bold; /* Bold text for category links */
+}
+
+.category-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #FF5722; /* Change color on hover */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Reduced gap between product cards */
+    margin-top: 20px; /* Increased margin to create space between category and product list */
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Reduced padding in product cards */
+    width: 120px; /* Adjusted width for a smaller layout */
+    transition: transform 0.2s, box-shadow 0.2s; /* Include box-shadow transition */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Scale up slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+.product-image {
+    width: 50%; /* Make the image fill the card */
+    height: 0px; /* Set a smaller fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio while covering the space */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.product-name {
+    font-size: 0.9em; /* Adjusted font size */
+    color: #4CAF50;
+    margin: 5px 0; /* Reduced margin */
+}
+
+.product-description {
+    font-size: 0.7em; /* Reduced font size */
+    margin: 5px 0; /* Reduced margin */
+}
+
+.product-price {
+    display: block;
+    font-size: 0.8em; /* Adjusted font size */
+    color: #FF5722;
+    margin: 5px 0; /* Reduced margin */
+}
+
+.compare-section {
+    margin: 5px 0; /* Reduced margin */
+}
+
+.compare-section input {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+.view-details-btn {
+    display: inline-block;
+    margin-top: 5px; /* Reduced margin */
+    padding: 8px 10px; /* Adjusted padding */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Include transform for scale effect */
+}
+
+.view-details-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.footer {
+    margin-top: 20px; /* Reduced margin */
+    padding: 10px; /* Reduced padding */
+    background-color: #eaeaea;
+}
+
+.footer-links {
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.footer-links a {
+    margin: 0 10px; /* Increased spacing */
+    text-decoration: none;
+    color: #4CAF50; /* Green color for links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #FF5722; /* Change color on hover */
+}
+
+.social-media a {
+    margin: 0 5px; /* Reduced margin */
+    text-decoration: none;
+    color: #4CAF50; /* Green color for links */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

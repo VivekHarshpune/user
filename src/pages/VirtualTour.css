@@ -1,0 +1,111 @@
+/* VirtualTour.css */
+
+/* General Styles for Virtual Tour */
+.virtual-tour-page {
+    margin: 0; /* Remove any margin */
+    font-family: Arial, sans-serif; /* Font family */
+    background-color: #000; /* Dark background for the entire page */
+    color: #fff; /* White text color for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+}
+
+/* Container for Tour Content */
+.virtual-tour-container {
+    background: rgba(50, 50, 50, 0.8); /* Semi-transparent dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Title Styling */
+.virtual-tour-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc00; /* Yellow text for the title */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Description Styling */
+.virtual-tour-description {
+    font-size: 16px;
+    color: #ccc; /* Light grey for description text */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Selection Boxes */
+.virtual-tour-location-selection,
+.virtual-tour-gym-selection {
+    margin: 15px 0;
+}
+
+.virtual-tour-location-selection label,
+.virtual-tour-gym-selection label {
+    font-weight: bold;
+    color: #ffcc00; /* Yellow for labels */
+}
+
+.virtual-tour-location-selection select,
+.virtual-tour-gym-selection select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444; /* Darker border color */
+    font-size: 16px;
+    margin-top: 5px;
+    background-color: #222; /* Dark background for selects */
+    color: #fff; /* White text for selects */
+}
+
+/* Gym Details */
+.virtual-tour-gym-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #444; /* Dark border for details */
+    border-radius: 5px;
+    background-color: rgba(40, 40, 40, 0.9); /* Dark background for gym details */
+}
+
+.virtual-tour-gym-details h3 {
+    margin-bottom: 10px;
+}
+
+/* Exit Button */
+.virtual-tour-exit-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff6b6b; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.virtual-tour-exit-button:hover {
+    background-color: #ff4a4a; /* Darker button on hover */
+}
+
+/* A-Frame Scene */
+.virtual-tour-virtual-view {
+    margin-top: 20px;
+    border: 1px solid #444; /* Dark border for the view */
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Adjust height for virtual view */
+}
+
+a-scene {
+    width: 100%;
+    height: 100%;
+}

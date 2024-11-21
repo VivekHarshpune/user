@@ -1,0 +1,148 @@
+.advertisement-page {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(to bottom right, #054381, #6cd767);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.advertisement-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #bd0808;
+  animation: fadeIn 1s ease;
+}
+
+.advertisement-intro {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #150202;
+}
+
+.inquiry-form {
+  background: lightcoral;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  margin-bottom: 50px;
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4CAF50;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.advertisement-section {
+  margin-top: 50px;
+}
+
+.advertisement-section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.advertisement-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.advertisement-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.advertisement-item:hover {
+  transform: scale(1.05);
+}
+
+.advertisement-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+.advertisement-item:hover .advertisement-image {
+  transform: perspective(600px) rotateY(180deg) rotateX(5deg); /* 3D rotation effect on hover */
+}
+
+.advertisement-item-title {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #4CAF50;
+}
+
+.advertisement-description {
+  font-size: 0.95rem;
+  color: #666;
+}

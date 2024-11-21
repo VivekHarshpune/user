@@ -1,0 +1,141 @@
+.gym-welcome {
+  padding: 10px;
+  background-color: #0bbd88a4;
+  border-radius: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  margin: 0px 0;
+}
+
+select {
+  padding: 15px;
+  border-radius: 20px;
+  border: 05px solid #7007b6;
+  margin-bottom: 50px;
+}
+
+.gym-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gym-card {
+  background-color: rgb(223, 187, 115);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: calc(30% - 20px);
+}
+
+.gym-card h3 {
+  margin: 0;
+  color: #4CAF50;
+}
+
+.gym-card p {
+  margin: 5px 0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a0457a;
+}
+
+.personalized-fitness {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.personalized-fitness button {
+  background-color: #04345b;
+}
+
+.personalized-fitness button:hover {
+  background-color: #1e88e5;
+}
+
+/* Centering the Popup */
+.popup {
+  position: fixed; /* Use fixed positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to center */
+  background-color: rgb(167, 124, 14); /* Background color of the popup */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  z-index: 1000; /* Ensure it's above other elements */
+  width: 300px; /* Set a width for the popup */
+  padding: 20px; /* Add some padding */
+}
+
+.popup-content button {
+  margin: 10px 0; /* Add vertical spacing between buttons */
+  padding: 10px 20px; /* Padding for buttons */
+  font-size: 16px; /* Font size for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+/* Keeping your existing styles for the button */
+.show-popup-btn {
+  position: fixed; /* Keeps the button fixed in the viewport */
+  top: 80px; /* Adjusted distance from the top to avoid hiding navbar */
+  right: 40px; /* Distance from the right */
+  padding: 12px 24px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(90deg, #ff6a00, #ee0979); /* Gradient background */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; /* Animation */
+  display: flex; /* Align items in the button */
+  align-items: center; /* Center items vertically */
+}
+
+.availability-logo {
+  width: 24px; /* Adjust logo size */
+  height: 24px; /* Adjust logo size */
+  margin-right: 8px; /* Space between logo and text */
+  animation: moveLogo 1s ease-in-out infinite; /* Animation */
+}
+
+@keyframes moveLogo {
+  0%, 100% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-5px); /* Move up */
+  }
+}
+
+.show-popup-btn:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  background: linear-gradient(90deg, #ee0979, #ff6a00); /* Change gradient on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Increased shadow on hover */
+}
+
+.show-popup-btn:focus {
+  outline: none; /* Remove outline on focus */
+}

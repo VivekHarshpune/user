@@ -1,0 +1,85 @@
+/* BadmintonWorldPage.css */
+
+.badminton-world-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Light background for better contrast */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features, .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature, .product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+}
+
+.feature:hover, .product:hover {
+    transform: scale(1.05); /* Scale effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.feature h3, .product h3 {
+    color: #28a745; /* Green color for headings */
+}
+
+.feature-link, .product-link, .community-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Animation for link hover */
+}
+
+.feature-link:hover, .product-link:hover, .community-link:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.community {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* New styles for the congratulations section */
+.congratulations {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.instagram-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;    /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777; /* Lighter color for footer text */
+}
+
+/* Additional Styles for Responsive Design */
+@media (max-width: 768px) {
+    .feature, .product {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

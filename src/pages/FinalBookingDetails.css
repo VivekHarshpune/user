@@ -1,0 +1,87 @@
+.final-booking-details {
+    padding: 30px; /* Spacious padding */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 700px; /* Width limit for the box */
+    margin: 50px auto; /* Centered with margin */
+    text-align: center; /* Center text */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+.final-booking-details h1 {
+    color: #333; /* Main title color */
+    margin-bottom: 20px; /* Spacing below title */
+    font-size: 2.8em; /* Large title font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.final-booking-details h2 {
+    color: #555; /* Subheading color */
+    margin-top: 20px; /* Spacing above subheading */
+    font-size: 1.8em; /* Increased font size for subheading */
+    transition: color 0.3s; /* Smooth color change */
+}
+
+.final-booking-details h2:hover {
+    color: #F37254; /* Hover color change */
+}
+
+.final-booking-details .booking-details,
+.final-booking-details .player-details {
+    margin: 15px 0; /* Spacing around detail sections */
+    padding: 20px; /* Padding for aesthetic appearance */
+    background-color: #ffffff; /* White background for clarity */
+    border-radius: 8px; /* Rounded corners for details */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+    text-align: left; /* Left-aligned for readability */
+    animation: slideIn 0.5s ease-in-out; /* Slide-in effect */
+}
+
+.final-booking-details strong {
+    color: #333; /* Strong text color */
+}
+
+.final-booking-details button {
+    display: inline-block; /* Center button */
+    margin: 25px auto; /* Centering with margin */
+    padding: 14px 28px; /* Button padding */
+    background-color: #F37254; /* Button color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded button corners */
+    font-size: 20px; /* Larger font size for button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth shadow for button */
+}
+
+.final-booking-details button:hover {
+    background-color: #d85a43; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.final-booking-details button:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        opacity: 1; /* Fully opaque */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Slide in from the top */
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        transform: translateY(0); /* End position */
+        opacity: 1; /* Fully opaque */
+    }
+}

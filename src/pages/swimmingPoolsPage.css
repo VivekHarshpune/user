@@ -1,0 +1,70 @@
+/* swimmingPoolsPage.css */
+
+/* Container for the entire page */
+.swimming-pools-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+  }
+  
+  /* Header styling */
+  .swimming-pools-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Sections for features, testimonials, events, and membership */
+  .swimming-pools-features-section,
+  .swimming-pools-testimonials-section,
+  .swimming-pools-events-section,
+  .swimming-pools-membership-section {
+    margin: 20px 0;
+  }
+  
+  /* Flexbox layout for features, testimonials, and events */
+  .swimming-pools-features,
+  .swimming-pools-testimonials,
+  .swimming-pools-events {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between items */
+  }
+  
+  /* Individual feature, testimonial, and event styling */
+  .swimming-pools-feature,
+  .swimming-pools-testimonial,
+  .swimming-pools-event {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for cards */
+  }
+  
+  /* Button styling */
+  .swimming-pools-signup-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  .swimming-pools-signup-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Footer styling */
+  .swimming-pools-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Social icon links styling */
+  .swimming-pools-social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  

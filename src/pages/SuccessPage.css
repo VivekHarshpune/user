@@ -1,0 +1,83 @@
+/* SuccessPage.css */
+.success-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 600px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #4CAF50; /* Green color for success */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size */
+    animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 1.5; /* Improved line spacing */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0; /* Margin for spacing */
+}
+
+li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #F37254; /* Razorpay theme color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.home-link:hover {
+    background-color: #d85a43; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Image styling */
+.success-container img {
+    max-width: 40%; /* Ensures the image does not exceed its container's width */
+    height: auto;    /* Maintains the aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Ensure styles do not affect other pages */
+.success-container {
+    /* You can use a unique class name or specific ID to avoid conflicts */
+}

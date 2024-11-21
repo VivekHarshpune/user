@@ -1,0 +1,110 @@
+/* General Styles for Crowd Level Predictor */
+.crowd-level-predictor {
+  margin: 0; /* Remove any margin */
+  font-family: Arial, sans-serif; /* Font family */
+  background-color: #000; /* Dark background for the entire page */
+  color: #fff; /* White text color for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; /* Full height of the viewport */
+  padding: 20px;
+}
+
+/* Container for Prediction Content */
+.crowd-level-predictor .container {
+  background: rgba(50, 50, 50, 0.8); /* Semi-transparent dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Title Styling */
+.crowd-level-predictor h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00; /* Yellow text for the title */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Prediction Level Message Styling */
+.crowd-level-predictor h2 {
+  font-size: 24px;
+  color: #2ecc71; /* Green for predicted level */
+  background-color: rgba(40, 40, 40, 0.9); /* Dark background for predicted level */
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-top: 20px; /* Space above the prediction message */
+  text-align: center;
+}
+
+/* Error Message Styling */
+.crowd-level-predictor .error-message {
+  color: #e74c3c; /* Red for error messages */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+.crowd-level-predictor select,
+.crowd-level-predictor input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #444; /* Darker border color */
+  font-size: 16px;
+  background-color: #222; /* Dark background for inputs */
+  color: #fff; /* White text for inputs */
+  transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+/* Change border color on focus */
+.crowd-level-predictor select:focus,
+.crowd-level-predictor input[type="text"]:focus {
+  border-color: #ffcc00; /* Yellow border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+.crowd-level-predictor button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db; /* Blue color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background and transform transition */
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+/* Button Hover Effect */
+.crowd-level-predictor button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Disabled Button Styling */
+.crowd-level-predictor button:disabled {
+  background-color: #bdc3c7; /* Grey for disabled button */
+  cursor: not-allowed;
+}
+
+/* Option Styling */
+.crowd-level-predictor option {
+  padding: 10px;
+  font-size: 16px;
+  color: #000; /* Black text for options */
+}
+
+/* Specific Gap Between Buttons */
+.crowd-level-predictor .predict-button {
+  margin-bottom: 20px; /* Adds gap between Predict and Check Availability buttons */
+}

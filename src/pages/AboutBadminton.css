@@ -1,0 +1,213 @@
+/* General Styles */
+.about-badminton {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+}
+
+.welcome-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #00796b;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+  transition: transform 0.3s;
+}
+
+.introduction:hover {
+  transform: scale(1.02);
+}
+
+.badminton-image {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #555;
+  text-align: justify;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 2em;
+  color: #00695c;
+  margin: 20px 0;
+}
+
+/* Event Section Styles */
+.event-section {
+  padding: 20px;
+  background: #a5d6a7;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.event-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background: #5dd9e2;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.register-btn {
+  background: #ffca28;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background: #ffc107;
+}
+
+/* News Section Styles */
+.news-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #ffccbc;
+  border-radius: 10px;
+}
+
+.news-ticker {
+  font-size: 1.2em;
+}
+
+/* Winners Section Styles */
+.winners-section, .indian-tournaments-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #80deea;
+  border-radius: 10px;
+}
+
+.winners-list,
+.indian-tournaments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.winner-item, .indian-item {
+  background: #00838f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.winner-item:hover, .indian-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Resources Section Styles */
+.resources-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8bbd0;
+  border-radius: 10px;
+}
+
+.resources-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Coach Section Styles */
+.coach-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #c5e1a5;
+  border-radius: 10px;
+}
+
+.find-coach-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.find-coach-btn:hover {
+  background-color: #45a049;
+}
+
+/* Booking Section Styles */
+.booking-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.book-badminton-btn {
+  background-color: #e57373;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.book-badminton-btn:hover {
+  background-color: #ef5350;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,68 @@
+/* Contact Us Page Container */
+.contact-container {
+  max-width: 600px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form on the page */
+  padding: 40px; /* Add padding around the container */
+  background-color: #6564; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title */
+.contact-title {
+  font-size: 32px; /* Title font size */
+  text-align: center; /* Center the title */
+  margin-bottom: 30px; /* Spacing below the title */
+  color: #333; /* Dark text color */
+}
+
+/* Form Styles */
+.contact-form {
+  width: 100%; /* Full width of the container */
+}
+
+/* Input Field Styles */
+.contact-input, .contact-textarea {
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light border */
+  padding: 10px; /* Padding inside input fields */
+  font-size: 16px; /* Font size */
+}
+
+/* Input focus styles */
+.contact-input:focus, .contact-textarea:focus {
+  border-color: #40a9ff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(64, 169, 255, 0.5); /* Light blue shadow */
+}
+
+/* TextArea specific styles */
+.contact-textarea {
+  min-height: 100px; /* Minimum height for the text area */
+}
+
+/* Button Styles */
+.contact-button {
+  width: 100%; /* Full width for the button */
+  margin-top: 20px; /* Spacing above the button */
+  background-color: #007bff; /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+}
+
+/* Button hover effect */
+.contact-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px; /* Reduced padding on smaller screens */
+  }
+
+  .contact-title {
+    font-size: 28px; /* Slightly smaller title on mobile */
+  }
+}

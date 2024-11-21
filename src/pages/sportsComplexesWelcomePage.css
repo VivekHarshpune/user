@@ -1,0 +1,239 @@
+/* sportsComplexesWelcomePage.css */
+
+/* Main container for the sports complexes page */
+.sports-complexes-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Header styles */
+  .sports-complexes-header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .sports-complexes-header h1 {
+    font-size: 2.5rem;
+    color: #ff5722; /* Bright orange */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sports-complexes-header p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Features section styles */
+  .sports-complexes-features {
+    margin-bottom: 40px;
+  }
+  
+  .sports-complexes-features .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .sports-complexes-features .feature {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .sports-complexes-features .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sports-complexes-features .feature h3 {
+    color: #007bff; /* Bright blue */
+  }
+  
+  /* Testimonials section styles */
+  .sports-complexes-testimonials {
+    margin-bottom: 40px;
+  }
+  
+  .sports-complexes-testimonials .testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .sports-complexes-testimonials .testimonial {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .sports-complexes-testimonials .testimonial:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Upcoming events section styles */
+  .sports-complexes-upcoming-events {
+    margin-bottom: 40px;
+  }
+  
+  .sports-complexes-upcoming-events .events {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sports-complexes-upcoming-events .event {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .sports-complexes-upcoming-events .event:hover {
+    background-color: #ffe5b4; /* Light orange */
+  }
+  
+  /* Gallery section styles */
+  .sports-complexes-gallery {
+    margin-bottom: 40px;
+  }
+  
+  .sports-complexes-gallery .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .sports-complexes-gallery img {
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .sports-complexes-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Blog section styles */
+  .sports-complexes-blog {
+    margin-bottom: 40px;
+  }
+  
+  .sports-complexes-blog .blog-posts {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sports-complexes-blog .post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .sports-complexes-blog .post:hover {
+    background-color: #cce5ff; /* Light blue */
+  }
+  
+  /* Newsletter section styles */
+  .sports-complexes-newsletter {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .sports-complexes-newsletter .email-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  .sports-complexes-newsletter .email-input:focus {
+    border-color: #ff5722; /* Change border color on focus */
+  }
+  
+  .sports-complexes-newsletter .subscribe-button {
+    padding: 10px 20px;
+    background-color: #ff5722; /* Bright orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .sports-complexes-newsletter .subscribe-button:hover {
+    background-color: #e64a19; /* Darker orange */
+    transform: scale(1.05);
+  }
+  
+  /* Membership section styles */
+  .sports-complexes-membership {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .sports-complexes-membership .signup-button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .sports-complexes-membership .signup-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05);
+  }
+  
+  /* Footer styles */
+  .sports-complexes-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .sports-complexes-footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .sports-complexes-footer .social-icons a:hover {
+    color: #ff5722; /* Bright orange */
+  }
+  
+  /* Keyframes for header animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

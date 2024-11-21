@@ -1,0 +1,135 @@
+/* General styling for the privacy policy page */
+.user-privacy-policy {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.user-privacy-policy h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Section headers */
+.user-privacy-policy h2 {
+  font-size: 1.75rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+/* Paragraph styling */
+.user-privacy-policy p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* List styling */
+.user-privacy-policy ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.user-privacy-policy li {
+  margin-bottom: 10px;
+}
+
+/* Centered email input styling */
+.email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Space below */
+}
+
+.email-container label {
+  margin-bottom: 5px; /* Space below label */
+}
+
+/* Input styling */
+.email-container input {
+  width: 100%;
+  max-width: 400px; /* Limit width */
+  padding: 12px; /* Padding for better touch target */
+  border: 1px solid #ccc; /* Border for input */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Standard text size */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+/* Input focus styling */
+.email-container input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Checkbox container styling */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center checkbox and label */
+  margin-top: 20px;
+}
+
+/* Checkbox input styling */
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Button styling */
+.user-privacy-policy button {
+  background-color: #007bff; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px; /* Padding for button */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Space above button */
+}
+
+/* Button hover and disabled styles */
+.user-privacy-policy button:hover {
+  background-color: #0056b3;
+}
+
+.user-privacy-policy button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+  color: red; /* Error message color */
+  text-align: center; /* Center align error messages */
+  margin-top: 20px; /* Space above error message */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .user-privacy-policy {
+    padding: 15px; /* Reduce padding on small screens */
+  }
+
+  .user-privacy-policy h1 {
+    font-size: 2rem; /* Smaller title */
+  }
+
+  .user-privacy-policy h2 {
+    font-size: 1.5rem; /* Smaller subheadings */
+  }
+
+  .user-privacy-policy button {
+    font-size: 0.9rem; /* Smaller button text */
+  }
+}
