@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import '/Users/vivekharsh/Downloads/CAPESTONE PROJECT/capestonebook/user-interface/src/BadmintonBookingPage.css'; // Import necessary CSS
+import './BadmintonBookingPage.css'; // Correct relative path
 
 const areas = [
     {
