@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/user/static/css/main.cdc17488.css",
+    "main.js": "/user/static/js/main.495cd0cf.js",
+    "static/js/453.17471756.chunk.js": "/user/static/js/453.17471756.chunk.js",
+    "static/media/maxresdefault.jpg": "/user/static/media/maxresdefault.bbc0dece5e089a3fa996.jpg",
+    "static/media/bnr_3568497_o.webp": "/user/static/media/bnr_3568497_o.7fd819188aefd72a9574.webp",
+    "static/media/bnr_3565157_o.webp": "/user/static/media/bnr_3565157_o.06454a438749603b0fab.webp",
+    "static/media/1200x800px_02(2).webp": "/user/static/media/1200x800px_02(2).d2fd1e006cfa1a428d7e.webp",
+    "static/media/success-payment-in-hand-illustration-in-flat-style-approved-money-illustration-on-isolated-background-successful-pay-sign-business-concept-vector.jpg": "/user/static/media/success-payment-in-hand-illustration-in-flat-style-approved-money-illustration-on-isolated-background-successful-pay-sign-business-concept-vector.08e6e260dfc578ff6dac.jpg",
+    "static/media/slick.svg": "/user/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/user/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/user/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/user/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/user/index.html",
+    "main.cdc17488.css.map": "/user/static/css/main.cdc17488.css.map",
+    "main.495cd0cf.js.map": "/user/static/js/main.495cd0cf.js.map",
+    "453.17471756.chunk.js.map": "/user/static/js/453.17471756.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdc17488.css",
+    "static/js/main.495cd0cf.js"
+  ]
+}
