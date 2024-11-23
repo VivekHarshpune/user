@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../api/AuthContext';
 import axios from 'axios';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
-import FacebookLogin from 'react-facebook-login';
 
 const UserLogin = () => {
   const [email, setEmail] = useState('');
@@ -41,22 +40,6 @@ const UserLogin = () => {
     } catch (err) {
       console.error('Google login error:', err);
       setError(err.response ? err.response.data.error : 'Network error. Please try again later.');
-    }
-  };
-
-  const responseFacebook = async (response) => {
-    if (response.accessToken) {
-      try {
-        const res = await axios.post('http://localhost:5001/api/users/facebook-login', { accessToken: response.accessToken });
-        const token = res.data.token;
-        localStorage.setItem('token', token);
-        login();
-        navigate('/');
-      } catch (err) {
-        setError('Failed to log in with Facebook. Please try again.');
-      }
-    } else {
-      setError('Failed to log in with Facebook. Please try again.');
     }
   };
 
@@ -100,16 +83,6 @@ const UserLogin = () => {
               onError={() => setError('Failed to log in with Google. Please try again.')}
               style={styles.googleButton} // Custom style for Google button
             />
-            {/* Facebook Login */}
-            <FacebookLogin
-              appId="your_facebook_app_id" // Replace with your actual Facebook App ID
-              autoLoad={false}
-              fields="name,email,picture"
-              callback={responseFacebook}
-              textButton="Login with Facebook"
-              cssClass="facebook-button"
-              style={styles.facebookButton} // Custom style for Facebook button
-            />
           </div>
         </div>
       </div>
@@ -149,7 +122,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '15px',
-    alignItems: 'center', // Center align items in the form
+    alignItems: 'center',
   },
   input: {
     padding: '15px',
@@ -160,8 +133,8 @@ const styles = {
     transition: 'border-color 0.3s',
     textAlign: 'center',
     fontWeight: 'bold',
-    width: '100%', // Make input fill the available width
-    boxShadow: '0 1px 3px rgba(0,0,0,0.1)', // Add subtle shadow to inputs
+    width: '100%',
+    boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
   },
   button: {
     padding: '15px',
@@ -175,7 +148,7 @@ const styles = {
     transition: 'background 0.3s ease',
     marginTop: '10px',
     boxShadow: '0 10px 20px rgba(102, 126, 234, 0.3)',
-    width: '100%', // Make button fill the available width
+    width: '100%',
   },
   socialButtons: {
     display: 'flex',
@@ -188,7 +161,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: '100%', // Ensure options fill the width of the card
+    width: '100%',
   },
   link: {
     color: '#667eea',
@@ -211,20 +184,7 @@ const styles = {
     fontSize: '14px',
     marginTop: '10px',
   },
-  googleButton: {
-    // Style for Google button
-  },
-  facebookButton: {
-    // Style for Facebook button
-  },
-  '@keyframes fadeIn': {
-    '0%': { opacity: 0 },
-    '100%': { opacity: 1 },
-  },
-  '@keyframes slideIn': {
-    '0%': { transform: 'translateY(-50px)', opacity: 0 },
-    '100%': { transform: 'translateY(0)', opacity: 1 },
-  },
+  googleButton: {},
 };
 
 export default UserLogin;
