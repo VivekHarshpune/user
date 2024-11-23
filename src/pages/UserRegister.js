@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { FaEnvelope, FaLock, FaPhone, FaUser } from 'react-icons/fa'; // Example icons
+import { FaEnvelope, FaLock, FaPhone, FaUser } from 'react-icons/fa';
 
 const UserRegister = () => {
   const [formData, setFormData] = useState({
